@@ -2,7 +2,7 @@ const app = require('express')();
 const fs = require('fs');
 
 process.title = 'weather';
-fs.writeFileSync('logs/pid.log', '' + process.pid);
+fs.openSync('logs/pid/' + process.pid, 'w');
 
 var server = app.listen(1903, () => console.log(`Listening on port 1903 as ${process.title}.`));
 

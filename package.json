@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node Server/index.js > logs/runtime.log 2> logs/error.log &",
+    "start": "Bash/start.sh > logs/runtime.log 2> logs/error.log &",
     "stop": "node Server/end.js",
-    "test": "node Server/index.js"
+    "test": "Bash/start.sh"
   },
   "author": "",
   "license": "ISC",
