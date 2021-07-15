@@ -1,0 +1,17 @@
+{
+  "name": "weather-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Server/index.js > logs/runtime.log 2> logs/error.log &",
+    "stop": "node Server/end.js",
+    "test": "node Server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security"
+  }
+}
